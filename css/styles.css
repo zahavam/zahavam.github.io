@@ -1,0 +1,110 @@
+body{
+	font-family: 'Raleway', sans-serif;
+	background-color: #E7C8A3;
+}
+body h1{
+	padding-left: 15px;
+}
+
+header{
+	background-image: url("../images/boat.jpg");
+	background-size: cover;
+	background-position: center top;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 75px;
+}
+header > *{
+	display: block;
+	width: 45%;
+	float: left;
+}
+header nav{
+	text-align: right;
+	padding-top: 40px;
+}
+header a{
+	text-decoration: none;
+	color: black;
+}
+header a:hover{
+	color: red;
+}
+header nav a{
+	display: inline-block;
+	padding: 0 8px;
+	border-right: 2px solid red; 
+}
+header nav a:first-of-type{
+	border-left: 2px solid red;
+}
+header::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+section {
+	padding-top: 90px;
+	padding-left: 5%;
+	padding-right: 5%;
+	/*background-color: #FFD6D4;*/
+}
+section#home img {
+	width: 100%;
+}
+section#portfolio{
+	text-align: center;
+}
+section#portfolio img{
+	display: inline-block;
+	margin: 8px 0;
+	vertical-align: middle;
+	width: 30%;
+}
+section h1{
+	font-family: 'Poiret One', cursive;
+}
+section#contact{
+	text-align: center;
+}
+form{
+	display: inline-block;
+}
+form label, form input, form textarea{
+	display: block;
+}
+form label{
+	margin-top: 25px;
+	margin-bottom: 8px;
+	text-align: left;
+}
+form input, form textarea{
+	width: 225px;
+}
+form input[type="submit"]{
+	width: auto;
+	padding: 10px;
+	margin-top: 25px;
+}
+footer{
+	text-align: center;
+}
+@media screen and (max-width: 575px){
+	header h1{
+		font-size: 1em;
+	}
+	header nav{
+		padding: 0 5%;
+		float: right;
+	}
+	header > *{
+		display: block;
+		width: auto;
+		clear: both;
+	}
+}
+
+
+
